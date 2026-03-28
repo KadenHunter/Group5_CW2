@@ -1,29 +1,102 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Home</title>
+    <title>The Daily Cup - Home</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/home.css">
 </head>
-
+ 
 <body class="home-page">
-
-<header class="header">
-    <h1>My Website</h1>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="contact.html">Contact</a>
-    </nav>
-</header>
-
-<main>
-    <section class="home">
-        <p>This is the homepage.</p>
+ 
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <div class="navbar-inner">
+            <a href="index.html" class="navbar-logo">
+                <img src="assets/logo.png" alt="The Daily Cup" class="logo-img" />
+            </a>
+            <button class="hamburger" id="hamburger" aria-label="Open menu">
+                <span></span><span></span><span></span>
+            </button>
+            <nav class="nav-links" id="nav-links">
+                <a href="index.html" class="nav-link active">Home</a>
+                <a href="about.html" class="nav-link">About Us</a>
+                <a href="menu.html" class="nav-link">Menu</a>
+                <a href="staff.html" class="nav-link">Our Staff</a>
+                <a href="contact.html" class="nav-link">Contact Us</a>
+            </nav>
+        </div>
+    </header>
+ 
+ 
+    <!-- banner -->
+    <section class="banner">
+        <img src="assets/banner.png" alt="The Daily Cup" class="banner-img" />
+        <div class="banner-overlay">
+            <img src="assets/slogan.png" alt="Your Daily Coffee Fix" class="banner-slogan-img" />
+        </div>
     </section>
-</main>
-
-<!-- jQuery FIRST -->
-<script src="js/jquery.js"></script>
-<script src="js/script.js"></script>
-
+ 
+ 
+    <!-- WELCOME -->
+    <main>
+        <section class="welcome">
+            <div class="welcome-text">
+                <h2>Welcome to The Daily Cup</h2>
+                <p>A local coffee shop serving a variety of handcrafted drinks, right in the heart of the community. Whether you're starting your morning or taking a well-earned break, we have the perfect cup for you.</p>
+            </div>
+            <div class="welcome-img">
+                <img src="assets/cafe-interior.jpg" alt="Inside The Daily Cup" />
+            </div>
+        </section>
+ 
+ 
+        <!-- APP SECTION -->
+        <section class="app-section">
+            <div class="app-inner">
+                <div class="app-text">
+                    <h2>Get the App</h2>
+                    <p>Order ahead, earn rewards and discover our full menu — all from your pocket. Our app is coming soon.</p>
+                </div>
+                <div class="app-img">
+                    <img src="assets/app-mockup.png" alt="The Daily Cup App" />
+                </div>
+            </div>
+        </section>
+    </main>
+ 
+ 
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-inner">
+            <div class="footer-brand">
+                <p class="footer-logo-text">The Daily Cup</p>
+                <p class="footer-tagline">Your Daily Coffee Fix.</p>
+            </div>
+            <div class="footer-socials">
+                <a href="#" class="social-icon" aria-label="Instagram">
+                    <img src="assets/instagram.png" alt="Instagram" />
+                </a>
+                <a href="#" class="social-icon" aria-label="Facebook">
+                    <img src="assets/facebook.png" alt="Facebook" />
+                </a>
+                <a href="#" class="social-icon" aria-label="TikTok">
+                    <img src="assets/tiktok.png" alt="TikTok" />
+                </a>
+            </div>
+            <div class="footer-contact">
+                <a href="mailto:hello@thedailycup.com" class="footer-email">hello@thedailycup.com</a>
+                <a href="contact.html" class="footer-contact-link">Contact Us</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; <span id="year"></span> The Daily Cup. All rights reserved.</p>
+        </div>
+    </footer>
+ 
+ 
+    <!-- jQuery then home.js -->
+    <script src="js/jquery.js"></script>
+    <script src="js/home.js"></script>
+ 
 </body>
 </html>

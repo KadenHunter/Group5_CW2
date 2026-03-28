@@ -1,1 +1,103 @@
 /* Home Page */
+ 
+/* Banner - large image at top with slogan overlaid */
+.banner {
+  position: relative;
+  height: 500px;
+  overflow: hidden;
+  background-color: #1D2C3C;
+}
+ 
+.banner-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+ 
+/* Dark overlay so the slogan is visible over the photo */
+.banner-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(29, 44, 60, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+ 
+.banner-slogan-img {
+  width: 90%;
+  max-width: 500px;
+}
+ 
+/* Welcome - two column layout, text left, image right */
+.welcome {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+ 
+.welcome-text h2 {
+  font-size: 1.8rem;
+  color: #1D2C3C;
+  margin-bottom: 1rem;
+}
+ 
+.welcome-text p {
+  color: #666666;
+  line-height: 1.8;
+}
+ 
+.welcome-img img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+ 
+/* App section - dark background, text left, mockup right */
+.app-section {
+  background-color: #1D2C3C;
+  padding: 4rem 2rem;
+}
+ 
+.app-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+ 
+.app-text h2 {
+  font-size: 1.8rem;
+  color: #F9F7F4;
+  margin-bottom: 1rem;
+}
+ 
+.app-text p {
+  color: #D4C4B3;
+  line-height: 1.8;
+}
+ 
+.app-img img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: contain;
+  border-radius: 12px;
+}
+ 
+/* Mobile */
+@media (max-width: 768px) {
+  .banner { height: 320px; }
+ 
+  /* Stack columns on top of each other on mobile */
+  .welcome, .app-inner {
+    grid-template-columns: 1fr;
+    padding: 2rem 1.5rem;
+  }
+}
