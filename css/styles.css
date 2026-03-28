@@ -33,12 +33,12 @@ a {
 }
  
 .navbar-inner {
-  max-width: 1200px;
+  max-width: 100%;
   margin: 0 auto;
   padding: 0 2rem;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
   height: 70px;
 }
  
@@ -49,6 +49,7 @@ a {
 .nav-links {
   display: flex;
   gap: 1rem;
+  margin-left: auto;
 }
  
 .nav-link {
