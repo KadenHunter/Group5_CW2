@@ -1,7 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- META -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The Daily Cup - Your local coffee shop for handcrafted drinks and a cozy atmosphere.">
+
     <title>The Daily Cup - Home</title>
+
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/home.css">
 </head>
@@ -12,11 +18,15 @@
     <header class="navbar">
         <div class="navbar-inner">
             <a href="index.html" class="navbar-logo">
-                <img src="assets/logo.png" alt="The Daily Cup" class="logo-img" />
+                <img src="assets/logo.png" alt="The Daily Cup logo" class="logo-img">
             </a>
-            <button class="hamburger" id="hamburger" aria-label="Open menu">
+
+            <button class="hamburger" id="hamburger"
+                aria-label="Open menu"
+                aria-expanded="false">
                 <span></span><span></span><span></span>
             </button>
+
             <nav class="nav-links" id="nav-links">
                 <a href="index.html" class="nav-link active">Home</a>
                 <a href="about.html" class="nav-link">About Us</a>
@@ -30,9 +40,9 @@
  
     <!-- banner -->
     <section class="banner">
-        <img src="assets/banner.png" alt="The Daily Cup" class="banner-img" />
+        <img src="assets/banner.png" alt="Coffee shop banner" class="banner-img">
         <div class="banner-overlay">
-            <img src="assets/slogan.png" alt="Your Daily Coffee Fix" class="banner-slogan-img" />
+            <img src="assets/slogan.png" alt="Your Daily Coffee Fix" class="banner-slogan-img">
         </div>
     </section>
  
@@ -41,11 +51,17 @@
     <main>
         <section class="welcome">
             <div class="welcome-text">
-                <h2>Welcome to The Daily Cup</h2>
-                <p>A local coffee shop serving a variety of handcrafted drinks, right in the heart of the community. Whether you're starting your morning or taking a well-earned break, we have the perfect cup for you.</p>
+                <h1>Welcome to The Daily Cup</h1>
+                <p>
+                    A local coffee shop serving a variety of handcrafted drinks, right in the heart of the community.
+                    Whether you're starting your morning or taking a break, we have the perfect cup for you.
+                </p>
             </div>
+
             <div class="welcome-img">
-                <img src="assets/cafe-interior.jpg" alt="Inside The Daily Cup" />
+                <img src="assets/cafe-interior.jpg"
+                     alt="Inside the coffee shop"
+                     loading="lazy">
             </div>
         </section>
  
@@ -54,11 +70,17 @@
         <section class="app-section">
             <div class="app-inner">
                 <div class="app-text">
-                    <h2>Get the App</h2>
-                    <p>Order ahead, earn rewards and discover our full menu — all from your pocket. Our app is coming soon.</p>
+                    <h3>Get the App</h3>
+                    <p>
+                        Order ahead, earn rewards and view our menu from your phone.
+                        Our app is coming soon.
+                    </p>
                 </div>
+
                 <div class="app-img">
-                    <img src="assets/app-mockup.png" alt="The Daily Cup App" />
+                    <img src="assets/app-mockup.png"
+                         alt="App preview"
+                         loading="lazy">
                 </div>
             </div>
         </section>
@@ -72,22 +94,25 @@
                 <p class="footer-logo-text">The Daily Cup</p>
                 <p class="footer-tagline">Your Daily Coffee Fix.</p>
             </div>
+
             <div class="footer-socials">
                 <a href="#" class="social-icon" aria-label="Instagram">
-                    <img src="assets/instagram.png" alt="Instagram" />
+                    <img src="assets/instagram.png" alt="Instagram">
                 </a>
                 <a href="#" class="social-icon" aria-label="Facebook">
-                    <img src="assets/facebook.png" alt="Facebook" />
+                    <img src="assets/facebook.png" alt="Facebook">
                 </a>
                 <a href="#" class="social-icon" aria-label="TikTok">
-                    <img src="assets/tiktok.png" alt="TikTok" />
+                    <img src="assets/tiktok.png" alt="TikTok">
                 </a>
             </div>
+
             <div class="footer-contact">
                 <a href="mailto:info@thedailycup.com" class="footer-email">info@thedailycup.com</a>
                 <a href="contact.html" class="footer-contact-link">Contact Us</a>
             </div>
         </div>
+
         <div class="footer-bottom">
             <p>&copy; <span id="year"></span> The Daily Cup. All rights reserved.</p>
         </div>
@@ -97,6 +122,6 @@
     <!-- jQuery then home.js -->
     <script src="js/jquery.js"></script>
     <script src="js/home.js"></script>
- 
+
 </body>
 </html>

@@ -17,8 +17,11 @@
 /* Dark overlay so the slogan is visible over the photo */
 .banner-overlay {
   position: absolute;
-  inset: 0;
-  background: rgba(29, 44, 60, 0.5);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(29, 44, 60, 0.3); 
   display: flex;
   align-items: center;
   justify-content: center;
@@ -28,6 +31,7 @@
   width: 90%;
   max-width: 500px;
 }
+ 
  
 /* Welcome - two column layout, text left, image right */
 .welcome {
@@ -57,6 +61,7 @@
   object-fit: cover;
   border-radius: 8px;
 }
+ 
  
 /* App section - dark background, text left, mockup right */
 .app-section {
@@ -91,12 +96,16 @@
   border-radius: 12px;
 }
  
+ 
 /* Mobile */
 @media (max-width: 768px) {
-  .banner { height: 320px; }
+  .banner {
+    height: 320px;
+  }
  
   /* Stack columns on top of each other on mobile */
-  .welcome, .app-inner {
+  .welcome,
+  .app-inner {
     grid-template-columns: 1fr;
     padding: 2rem 1.5rem;
   }

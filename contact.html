@@ -1,33 +1,38 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Contact</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Daily Cup - Contact Us</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/contact.css">
 </head>
+<body>
 
-<body class="contact-page">
+    <!-- Navbar code -->
+    <header class="navbar">
+        <div class="navbar-inner">
+            <a href="index.html" class="navbar-logo">
+                <img src="assets/logo.png" alt="The Daily Cup logo" class="logo-img">
+            </a>
+            <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+            <nav class="nav-links" id="nav-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About Us</a>
+                <a href="menu.html" class="nav-link">Menu</a>
+                <a href="staff.html" class="nav-link">Our Staff</a>
+                <a href="contact.html" class="nav-link active">Contact Us</a>
+            </nav>
+        </div>
+    </header>
 
-<header class="header">
-    <h1>Contact</h1>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="contact.html">Contact</a>
-    </nav>
-</header>
+    <main>
+        <h1>Contact Us</h1>
+    </main>
 
-<main>
-    <section class="contact">
-        <form id="contactForm">
-            <input type="text" placeholder="Name"><br><br>
-            <input type="email" placeholder="Email"><br><br>
-            <textarea placeholder="Message"></textarea><br><br>
-            <button type="submit">Send</button>
-        </form>
-    </section>
-</main>
-
-<script src="js/jquery.js"></script>
-<script src="js/script.js"></script>
-
+    <script src="js/jquery.js"></script>
+    <script src="js/contact.js"></script>
 </body>
 </html>

@@ -12,6 +12,7 @@ body {
   font-family: Arial, sans-serif;
   background-color: #F9F7F4;
   color: #333333;
+  padding-top: 70px;
 }
  
 img {
@@ -24,21 +25,23 @@ a {
   color: inherit;
 }
  
+ 
 /* Navbar */
 .navbar {
   background-color: #1D2C3C;
-  position: sticky;
+  position: fixed;
   top: 0;
-  z-index: 999;
+  left: 0;
+  right: 0;
+  z-index: 100;
 }
- 
+
+/* logo now hugs left */
 .navbar-inner {
-  max-width: 100%;
-  margin: 0 auto;
-  padding: 0 2rem;
+  width: 100%;
+  padding-right: 2rem; 
   display: flex;
   align-items: center;
-  justify-content: flex-start;
   height: 70px;
 }
  
@@ -62,8 +65,8 @@ a {
 .nav-link:hover,
 .nav-link.active {
   background-color: rgba(255, 255, 255, 0.1);
-  border-radius: 4px;
 }
+ 
  
 /* Hidden on desktop, shown on mobile */
 .hamburger {
@@ -72,7 +75,6 @@ a {
   gap: 5px;
   background: none;
   border: none;
-  cursor: pointer;
 }
  
 .hamburger span {
@@ -81,6 +83,7 @@ a {
   height: 2px;
   background: #F9F7F4;
 }
+ 
  
 /* Footer */
 .footer {
@@ -93,10 +96,8 @@ a {
   margin: 0 auto;
   padding: 2rem;
   display: flex;
-  align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-  gap: 1.5rem;
 }
  
 .footer-logo-text {
@@ -108,7 +109,6 @@ a {
 .footer-tagline {
   font-size: 0.85rem;
   color: #D4C4B3;
-  margin-top: 0.2rem;
 }
  
 .footer-socials {
@@ -124,10 +124,9 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow: hidden;
 }
  
-/* Makes icons white to match the colour scheme */
+/* Makes icons white */
 .social-icon img {
   width: 18px;
   height: 18px;
@@ -137,7 +136,6 @@ a {
 .footer-contact {
   display: flex;
   flex-direction: column;
-  gap: 0.4rem;
   text-align: right;
 }
  
@@ -147,24 +145,22 @@ a {
   font-size: 0.9rem;
 }
  
-.footer-email:hover,
-.footer-contact-link:hover {
-  color: #F9F7F4;
-}
- 
 .footer-bottom {
   text-align: center;
   padding: 1rem;
   font-size: 0.8rem;
-  color: rgba(249, 247, 244, 0.4);
-  border-top: 1px solid rgba(212, 196, 179, 0.12);
+  color: #aaa;
 }
+ 
  
 /* Mobile */
 @media (max-width: 768px) {
-  .hamburger { display: flex; }
+  .hamburger {
+    display: flex;
+    margin-left: auto; /* keeps it on the right */
+  }
  
-  /* Dropdown menu on mobile, opened by JS */
+  /* Dropdown menu on mobile */
   .nav-links {
     display: none;
     flex-direction: column;
@@ -174,14 +170,23 @@ a {
     right: 0;
     background-color: #1D2C3C;
     padding: 1rem 2rem;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
   }
  
-  .nav-links.open { display: flex; }
+  .nav-links.open {
+    display: flex;
+  }
  
-  .nav-link { font-size: 1rem; padding: 0.6rem 0; width: 100%; }
+  .nav-link {
+    padding: 0.6rem 0;
+    width: 100%;
+  }
  
-  .footer-inner { flex-direction: column; }
+  .footer-inner {
+    flex-direction: column;
+    text-align: center;
+  }
  
-  .footer-contact { text-align: left; }
+  .footer-contact {
+    text-align: center;
+  }
 }
