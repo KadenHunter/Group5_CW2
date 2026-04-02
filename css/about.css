@@ -1,1 +1,26 @@
 /* about page css */
+/* About page image fix */
+
+.welcome-img img,
+.app-img img {
+  width: 100%;
+  max-width: 400px;   /* stops them being massive */
+  height: auto;       /* keeps correct shape */
+  border-radius: 8px;
+  display: block;
+}
+/* Fix layout spacing */
+
+.welcome,
+.app-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+/* Stop huge empty space */
+.welcome-text,
+.app-text {
+  max-width: 500px;
+}
