@@ -1,1 +1,78 @@
-/* Staff css */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f0e6;
+  margin: 0;
+  text-align: center;
+}
+
+.title {
+  margin-top: 20px;
+  font-size: 2.5rem;
+}
+
+/* Staff cards */
+.staff-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+.staff-card {
+  background: white;
+  width: 220px;
+  padding: 15px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.staff-card:hover {
+  transform: scale(1.05);
+}
+
+.staff-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.role {
+  color: #555;
+}
+
+.bio {
+  display: none;
+  margin-top: 10px;
+}
+
+/* Buttons */
+button {
+  background-color: #4a6fa5;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  margin-top: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #3a5a85;
+}
+
+/* Hiring section */
+.hiring {
+  margin: 40px;
+  padding: 20px;
+  background-color: #e0d4c1;
+  border-radius: 10px;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .staff-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}

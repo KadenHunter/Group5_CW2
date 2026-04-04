@@ -4,35 +4,113 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Daily Cup - Our Staff</title>
+
+    <!-- CSS -->
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/staff.css">
+
+    <!-- jQuery (REQUIRED) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
+
 <body>
 
-    <!-- Navbar code -->
-    <header class="navbar">
-        <div class="navbar-inner">
-            <a href="index.html" class="navbar-logo">
-                <img src="assets/logo.png" alt="The Daily Cup logo" class="logo-img">
-            </a>
-            <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
-                <span></span><span></span><span></span>
-            </button>
-            <nav class="nav-links" id="nav-links">
-                <a href="index.html" class="nav-link">Home</a>
-                <a href="about.html" class="nav-link">About Us</a>
-                <a href="menu.html" class="nav-link">Menu</a>
-                <a href="staff.html" class="nav-link active">Our Staff</a>
-                <a href="contact.html" class="nav-link">Contact Us</a>
-            </nav>
+<!-- NAVBAR -->
+<header class="navbar">
+    <div class="navbar-inner">
+        <a href="index.html" class="navbar-logo">
+            <img src="assets/logo.png" alt="The Daily Cup logo" class="logo-img">
+        </a>
+
+        <button class="hamburger" id="hamburger">
+            <span></span><span></span><span></span>
+        </button>
+
+        <nav class="nav-links" id="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="menu.html">Menu</a>
+            <a href="staff.html" class="active">Our Staff</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </div>
+</header>
+
+<!-- PAGE TITLE -->
+<h1 class="title">Meet Our Team</h1>
+
+<!-- STAFF SECTION -->
+<div class="staff-container">
+
+    <div class="staff-card">
+        <img src="assets/staff1.jpg" alt="Sarah">
+        <h3>Sarah</h3>
+        <p>Head Barista</p>
+        <button class="bio-btn">View Bio</button>
+        <p class="bio">Sarah has 5+ years experience and loves latte art.</p>
+    </div>
+
+    <div class="staff-card">
+        <img src="assets/staff2.jpg" alt="John">
+        <h3>John</h3>
+        <p>Coffee Specialist</p>
+        <button class="bio-btn">View Bio</button>
+        <p class="bio">John specialises in artisan coffee brewing.</p>
+    </div>
+
+    <div class="staff-card">
+        <img src="assets/staff3.jpg" alt="Emma">
+        <h3>Emma</h3>
+        <p>Cafe Assistant</p>
+        <button class="bio-btn">View Bio</button>
+        <p class="bio">Emma keeps the café running smoothly.</p>
+    </div>
+
+</div>
+
+<!-- HIRING SECTION -->
+<section class="hiring">
+    <h2>We're Hiring!</h2>
+    <button id="apply-btn">Apply Now</button>
+    <p id="apply-message">Send your CV to: jobs@dailycup.com</p>
+</section>
+
+<!-- FOOTER -->
+   <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-inner">
+            <div class="footer-brand">
+                <p class="footer-logo-text">The Daily Cup</p>
+                <p class="footer-tagline">Your Daily Coffee Fix.</p>
+            </div>
+
+            <div class="footer-socials">
+                <a href="#" class="social-icon" aria-label="Instagram">
+                    <img src="assets/instagram.png" alt="Instagram">
+                </a>
+                <a href="#" class="social-icon" aria-label="Facebook">
+                    <img src="assets/facebook.png" alt="Facebook">
+                </a>
+                <a href="#" class="social-icon" aria-label="TikTok">
+                    <img src="assets/tiktok.png" alt="TikTok">
+                </a>
+            </div>
+
+            <div class="footer-contact">
+                <a href="mailto:info@thedailycup.com" class="footer-email">info@thedailycup.com</a>
+                <a href="contact.html" class="footer-contact-link">Contact Us</a>
+            </div>
         </div>
-    </header>
 
-    <main>
-        <h1>Our Staff</h1>
-    </main>
+        <div class="footer-bottom">
+            <p>&copy; <span id="year"></span> The Daily Cup. All rights reserved.</p>
+        </div>
+    </footer>
+ 
 
-    <script src="js/jquery.js"></script>
-    <script src="js/staff.js"></script>
+<!-- YOUR JAVASCRIPT -->
+<script src="js/staff.js"></script>
+
 </body>
 </html>
+ 
