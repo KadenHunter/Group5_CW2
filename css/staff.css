@@ -1,75 +1,101 @@
+/* PAGE BACKGROUND */
 body {
   font-family: Arial, sans-serif;
-  background-color: #f5f0e6;
+  background-color: #F9F7F4;
   margin: 0;
   text-align: center;
 }
 
+/* PAGE TITLE */
 .title {
-  margin-top: 20px;
-  font-size: 2.5rem;
+  margin: 30px 0 10px;
+  font-size: 2.2rem;
+  color: #1D2C3C;
 }
 
-/* Staff cards */
+/* STAFF SECTION */
 .staff-container {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 25px;
   padding: 20px;
 }
 
+/* STAFF CARD */
 .staff-card {
   background: white;
-  width: 220px;
+  width: 230px;
   padding: 15px;
-  border-radius: 15px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  transition: transform 0.3s;
+  border-radius: 10px;
+  border: 1px solid #D4C4B3;
+  transition: transform 0.2s ease;
 }
 
 .staff-card:hover {
-  transform: scale(1.05);
+  transform: translateY(-5px);
 }
 
+/* IMAGE */
 .staff-card img {
   width: 100%;
-  border-radius: 10px;
+  height: 200px;        
+  object-fit: cover;    
+  border-radius: 8px;
+  margin-bottom: 10px;
 }
 
-.role {
-  color: #555;
+/* NAME */
+.staff-card h3 {
+  color: #1D2C3C;
+  margin-bottom: 5px;
 }
 
+/* ROLE */
+.staff-card p {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+/* BIO TEXT */
 .bio {
   display: none;
   margin-top: 10px;
+  font-size: 0.85rem;
 }
 
-/* Buttons */
+/* BUTTON */
 button {
-  background-color: #4a6fa5;
-  color: white;
+  background-color: #1D2C3C;
+  color: #F9F7F4;
   border: none;
   padding: 8px 12px;
   margin-top: 10px;
-  border-radius: 5px;
+  border-radius: 4px;
   cursor: pointer;
 }
 
 button:hover {
-  background-color: #3a5a85;
+  background-color: #2a3f57;
 }
 
-/* Hiring section */
+/* HIRING SECTION */
 .hiring {
-  margin: 40px;
-  padding: 20px;
-  background-color: #e0d4c1;
-  border-radius: 10px;
+  margin: 40px auto;
+  padding: 25px;
+  max-width: 500px;
+  background-color: #1D2C3C;
+  color: #F9F7F4;
+  border-radius: 8px;
 }
 
-/* Mobile */
+#apply-message {
+  display: none;
+  margin-top: 10px;
+  font-size: 0.9rem;
+}
+
+/* MOBILE */
 @media (max-width: 600px) {
   .staff-container {
     flex-direction: column;

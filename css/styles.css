@@ -213,3 +213,17 @@ a {
     text-align: center;
   }
 }
+
+/* FOOTER SOCIAL ICONS */
+.social-icon {
+  width: 75px;
+  height: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-icon img {
+  width: 46px;
+  height: 46px;
+}

@@ -8,9 +8,6 @@
     <!-- CSS -->
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/staff.css">
-
-    <!-- jQuery (REQUIRED) -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 
 <body>
@@ -26,13 +23,13 @@
             <span></span><span></span><span></span>
         </button>
 
-        <nav class="nav-links" id="nav-links">
-            <a href="index.html">Home</a>
-            <a href="about.html">About Us</a>
-            <a href="menu.html">Menu</a>
-            <a href="staff.html" class="active">Our Staff</a>
-            <a href="contact.html">Contact</a>
-        </nav>
+       <nav class="nav-links" id="nav-links">
+    <a href="index.html" class="nav-link">Home</a>
+    <a href="about.html" class="nav-link">About Us</a>
+    <a href="menu.html" class="nav-link">Menu</a>
+    <a href="staff.html" class="nav-link active">Our Staff</a>
+    <a href="contact.html" class="nav-link">Contact Us</a>
+</nav>
     </div>
 </header>
 
@@ -40,77 +37,96 @@
 <h1 class="title">Meet Our Team</h1>
 
 <!-- STAFF SECTION -->
-<div class="staff-container">
+<section class="staff-container">
 
+    <!-- STAFF MEMBER -->
     <div class="staff-card">
-        <img src="assets/staff1.jpg" alt="Sarah">
+        <img src="assets/staff1.jpg" alt="Sarah - Head Barista">
         <h3>Sarah</h3>
-        <p>Head Barista</p>
+        <p class="role">Head Barista</p>
         <button class="bio-btn">View Bio</button>
-        <p class="bio">Sarah has 5+ years experience and loves latte art.</p>
+        <p class="bio">
+            Sarah leads our coffee team and brings over 5 years of experience.
+            She specialises in latte art and is passionate about creating the perfect cup every time.
+        </p>
     </div>
 
+    <!-- STAFF MEMBER -->
     <div class="staff-card">
-        <img src="assets/staff2.jpg" alt="John">
+        <img src="assets/staff2.jpg" alt="John - Coffee Specialist">
         <h3>John</h3>
-        <p>Coffee Specialist</p>
+        <p class="role">Coffee Specialist</p>
         <button class="bio-btn">View Bio</button>
-        <p class="bio">John specialises in artisan coffee brewing.</p>
+        <p class="bio">
+            John focuses on sourcing and brewing high-quality beans.
+            He enjoys experimenting with different brewing methods to bring out unique flavours.
+        </p>
     </div>
 
+    <!-- STAFF MEMBER -->
     <div class="staff-card">
-        <img src="assets/staff3.jpg" alt="Emma">
+        <img src="assets/staff3.jpg" alt="Emma - Cafe Assistant">
         <h3>Emma</h3>
-        <p>Cafe Assistant</p>
+        <p class="role">Cafe Assistant</p>
         <button class="bio-btn">View Bio</button>
-        <p class="bio">Emma keeps the café running smoothly.</p>
+        <p class="bio">
+            Emma helps keep everything running smoothly, from serving customers
+            to maintaining a warm and welcoming atmosphere.
+        </p>
     </div>
 
-</div>
+</section>
 
 <!-- HIRING SECTION -->
 <section class="hiring">
-    <h2>We're Hiring!</h2>
+    <h2>Join Our Team</h2>
+    <p>
+        We're always looking for friendly, motivated people who enjoy working in a fast-paced café environment.
+    </p>
     <button id="apply-btn">Apply Now</button>
     <p id="apply-message">Send your CV to: jobs@dailycup.com</p>
 </section>
 
 <!-- FOOTER -->
-   <!-- FOOTER -->
-    <footer class="footer">
-        <div class="footer-inner">
-            <div class="footer-brand">
-                <p class="footer-logo-text">The Daily Cup</p>
-                <p class="footer-tagline">Your Daily Coffee Fix.</p>
-            </div>
+<footer class="footer">
+    <div class="footer-inner">
 
-            <div class="footer-socials">
-                <a href="#" class="social-icon" aria-label="Instagram">
-                    <img src="assets/instagram.png" alt="Instagram">
-                </a>
-                <a href="#" class="social-icon" aria-label="Facebook">
-                    <img src="assets/facebook.png" alt="Facebook">
-                </a>
-                <a href="#" class="social-icon" aria-label="TikTok">
-                    <img src="assets/tiktok.png" alt="TikTok">
-                </a>
-            </div>
-
-            <div class="footer-contact">
-                <a href="mailto:info@thedailycup.com" class="footer-email">info@thedailycup.com</a>
-                <a href="contact.html" class="footer-contact-link">Contact Us</a>
-            </div>
+        <!-- BRAND -->
+        <div class="footer-brand">
+            <p class="footer-logo-text">The Daily Cup</p>
+            <p class="footer-tagline">Your Daily Coffee Fix.</p>
         </div>
 
-        <div class="footer-bottom">
-            <p>&copy; <span id="year"></span> The Daily Cup. All rights reserved.</p>
+        <!-- SOCIALS -->
+        <div class="footer-socials">
+            <a href="#" class="social-icon" aria-label="Instagram">
+                <img src="assets/instagram.png" alt="Instagram">
+            </a>
+            <a href="#" class="social-icon" aria-label="Facebook">
+                <img src="assets/facebook.png" alt="Facebook">
+            </a>
+            <a href="#" class="social-icon" aria-label="TikTok">
+                <img src="assets/tiktok.png" alt="TikTok">
+            </a>
         </div>
-    </footer>
- 
 
-<!-- YOUR JAVASCRIPT -->
+        <!-- CONTACT -->
+        <div class="footer-contact">
+            <a href="mailto:info@thedailycup.com" class="footer-email">info@thedailycup.com</a>
+            <a href="contact.html" class="footer-contact-link">Contact Us</a>
+        </div>
+
+    </div>
+
+    <!-- COPYRIGHT -->
+    <div class="footer-bottom">
+        <p>&copy; <span id="year"></span> The Daily Cup. All rights reserved.</p>
+    </div>
+</footer>
+
+<!-- JAVASCRIPT -->
+<script src="js/jquery.js"></script>
 <script src="js/staff.js"></script>
 
 </body>
 </html>
- 
