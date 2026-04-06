@@ -1,112 +1,226 @@
-/* Home Page */
- 
-/* Banner - large image at top with slogan overlaid */
+/* BANNER SECTION */
+
 .banner {
   position: relative;
   height: 500px;
   overflow: hidden;
   background-color: #1D2C3C;
 }
- 
+
 .banner-img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
- 
-/* Dark overlay so the slogan is visible over the photo */
+
 .banner-overlay {
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(29, 44, 60, 0.3); 
+  background: rgba(29, 44, 60, 0.3);
   display: flex;
   align-items: center;
   justify-content: center;
 }
- 
+
 .banner-slogan-img {
   width: 90%;
   max-width: 500px;
 }
- 
- 
-/* Welcome - two column layout, text left, image right */
+
+/* WELCOME SECTION */
+
 .welcome {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 4rem 2rem;
+  padding: 5rem 2rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 3rem;
+  gap: 4rem;
   align-items: center;
 }
- 
-.welcome-text h2 {
-  font-size: 1.8rem;
-  color: #1D2C3C;
-  margin-bottom: 1rem;
+
+.welcome-text {
+  padding-right: 1rem;
 }
- 
+
+.welcome-text h1 {
+  font-size: 2rem;
+  color: #1D2C3C;
+  margin-bottom: 1.2rem;
+  line-height: 1.3;
+}
+
 .welcome-text p {
   color: #666666;
-  line-height: 1.8;
+  line-height: 1.9;
+  font-size: 1rem;
 }
- 
+
 .welcome-img img {
   width: 100%;
-  height: 320px;
+  height: 360px;
   object-fit: cover;
   border-radius: 8px;
 }
- 
- 
-/* App section - dark background, text left, mockup right */
-.app-section {
+
+.btn {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 0.75rem 1.8rem;
+  background-color: #1D2C3C;
+  color: #F9F7F4;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+.btn:hover {
+  background-color: #2a3f57;
+}
+
+/* WHY CHOOSE US SECTION */
+
+
+.why-section {
   background-color: #1D2C3C;
   padding: 4rem 2rem;
+  text-align: center;
 }
- 
-.app-inner {
-  max-width: 1200px;
+
+.why-section h2 {
+  font-size: 2rem;
+  color: #F9F7F4;
+  margin-bottom: 2.5rem;
+}
+
+.why-grid {
+  max-width: 1000px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 3rem;
-  align-items: center;
+  gap: 1.5rem;
 }
- 
-.app-text h2 {
-  font-size: 1.8rem;
-  color: #F9F7F4;
-  margin-bottom: 1rem;
+
+.why-card {
+  background-color: #F9F7F4;
+  border-radius: 8px;
+  padding: 2rem;
+  text-align: center;
 }
- 
-.app-text p {
-  color: #D4C4B3;
-  line-height: 1.8;
-}
- 
-.app-img img {
-  width: 100%;
-  max-height: 400px;
+
+.why-icon {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 1rem;
+  display: block;
   object-fit: contain;
-  border-radius: 12px;
 }
- 
- 
-/* Mobile */
+
+.why-card h3 {
+  font-size: 1.1rem;
+  color: #1D2C3C;
+  margin-bottom: 0.5rem;
+  border-bottom: 1px solid #D4C4B3;
+  padding-bottom: 0.5rem;
+}
+
+.why-card p {
+  color: #666666;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+
+/* OPENING HOURS SECTION */
+
+.hours-section {
+  background: #F9F7F4;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.hours-section h2 {
+  color: #1D2C3C;
+  margin-bottom: 20px;
+}
+
+/* hours box */
+.hours-card {
+  background: white;
+  padding: 20px;
+  margin: 0 auto 20px;
+  max-width: 600px;
+  border: 1px solid #D4C4B3;
+  text-align: left;
+}
+
+/* each day row */
+.day {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  border-bottom: 1px solid #eee;
+  color: #1D2C3C;
+}
+
+/* closed day */
+.closed span:last-child {
+  color: red;
+}
+
+/* info box */
+.hours-side {
+  background: #1D2C3C;
+  color: #F9F7F4;
+  padding: 20px;
+  max-width: 600px;
+  margin: 0 auto 20px;
+}
+
+.hours-side ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.hours-side li {
+  margin-bottom: 8px;
+}
+
+/* MOBILE RESPONSIVE */
+
 @media (max-width: 768px) {
   .banner {
     height: 320px;
   }
- 
-  /* Stack columns on top of each other on mobile */
-  .welcome,
-  .app-inner {
+
+  .welcome {
     grid-template-columns: 1fr;
     padding: 2rem 1.5rem;
   }
+
+  .welcome-text {
+    padding-right: 0;
+  }
+
+  .why-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* FOOTER SOCIAL ICONS */
+.social-icon {
+  width: 75px;
+  height: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-icon img {
+  width: 46px;
+  height: 46px;
 }
