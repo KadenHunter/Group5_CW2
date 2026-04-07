@@ -3,14 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Contact The Daily Cup - make a reservation, book an event, leave feedback or send a general enquiry.">
+    <meta name="description" content="Get in touch with The Daily Cup — reservations, events, feedback, or just a hello.">
     <title>The Daily Cup - Contact Us</title>
+    <link rel="icon" href="assets/favicon.png" type="image/png">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/contact.css">
 </head>
 <body>
 
-    <!-- Navbar code -->
+    <!-- Top navigation bar -->
     <header class="navbar">
         <div class="navbar-inner">
             <a href="index.html" class="navbar-logo">
@@ -30,11 +31,11 @@
     </header>
 
     <main>
-        <h1 class="page-title">Contact Us</h1>
+        <h1 class="page-title">Get in Touch</h1>
 
         <form id="contact-form" novalidate>
 
-            <!-- ENQUIRY TYPE DROPDOWN -->
+            <!-- What kind of message is this? -->
             <div class="form-group">
                 <label for="enquiry-type">What can we help you with?</label>
                 <select id="enquiry-type" name="enquiry-type" aria-required="true">
@@ -47,7 +48,7 @@
                 <span class="error" id="enquiry-type-error" aria-live="polite"></span>
             </div>
 
-            <!-- SHARED FIELDS - always visible -->
+            <!-- Name and email — always shown -->
             <div id="shared-fields">
 
                 <div class="form-group">
@@ -70,7 +71,7 @@
 
             </div>
 
-            <!-- GENERAL ENQUIRY FIELDS -->
+            <!-- General enquiry — shown when "General Enquiry" is selected -->
             <div id="general-fields" class="conditional-fields">
 
                 <div class="form-group">
@@ -92,7 +93,7 @@
 
             </div>
 
-            <!-- TABLE RESERVATION FIELDS -->
+            <!-- Table reservation — shown when "Table Reservation" is selected -->
             <div id="reservation-fields" class="conditional-fields">
 
                 <div class="form-group">
@@ -128,7 +129,7 @@
 
             </div>
 
-            <!-- EVENT BOOKING FIELDS -->
+            <!-- Event booking — shown when "Event Booking" is selected -->
             <div id="event-fields" class="conditional-fields">
 
                 <div class="form-group">
@@ -170,7 +171,7 @@
 
             </div>
 
-            <!-- FEEDBACK FIELDS -->
+            <!-- Feedback — shown when "Feedback" is selected -->
             <div id="feedback-fields" class="conditional-fields">
 
                 <div class="form-group">
@@ -201,21 +202,20 @@
 
             </div>
 
-            <!-- SUBMIT BUTTON -->
+            <!-- Send it off -->
             <div class="form-group">
                 <button type="submit" id="submit-btn">Send Message</button>
             </div>
 
-            <!-- SUCCESS MESSAGE -->
+            <!-- Shown after successful submission -->
             <div id="success-message">
-                <p>Thank you! Your message has been sent. We will get back to you soon.</p>
+                <p>Thank you! Your message has been sent. We'll be in touch soon.</p>
             </div>
 
         </form>
-
     </main>
 
-    <!-- FOOTER -->
+    <!-- Footer -->
     <footer class="footer">
         <div class="footer-inner">
 
