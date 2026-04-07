@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Meet the team behind The Daily Cup - our friendly and experienced staff who make your coffee experience special.">
     <title>The Daily Cup - Our Staff</title>
 
     <!-- CSS -->
@@ -19,7 +20,9 @@
             <img src="assets/logo.png" alt="The Daily Cup logo" class="logo-img">
         </a>
 
-        <button class="hamburger" id="hamburger">
+        <button class="hamburger" id="hamburger"
+            aria-label="Open menu"
+            aria-expanded="false">
             <span></span><span></span><span></span>
         </button>
 
@@ -33,6 +36,8 @@
     </div>
 </header>
 
+<main>
+
 <!-- PAGE TITLE -->
 <h1 class="title">Meet Our Team</h1>
 
@@ -44,8 +49,8 @@
         <img src="assets/staff1.jpg" alt="Sarah - Head Barista">
         <h3>Sarah</h3>
         <p class="role">Head Barista</p>
-        <button class="bio-btn">View Bio</button>
-        <p class="bio">
+        <button class="bio-btn" aria-expanded="false" aria-controls="bio1">View Bio</button>
+        <p class="bio" id="bio1">
             Sarah leads our coffee team and brings over 5 years of experience.
             She specialises in latte art and is passionate about creating the perfect cup every time.
         </p>
@@ -56,8 +61,8 @@
         <img src="assets/staff2.jpg" alt="John - Coffee Specialist">
         <h3>John</h3>
         <p class="role">Coffee Specialist</p>
-        <button class="bio-btn">View Bio</button>
-        <p class="bio">
+        <button class="bio-btn" aria-expanded="false" aria-controls="bio2">View Bio</button>
+        <p class="bio" id="bio2">
             John focuses on sourcing and brewing high-quality beans.
             He enjoys experimenting with different brewing methods to bring out unique flavours.
         </p>
@@ -68,8 +73,8 @@
         <img src="assets/staff3.jpg" alt="Emma - Cafe Assistant">
         <h3>Emma</h3>
         <p class="role">Cafe Assistant</p>
-        <button class="bio-btn">View Bio</button>
-        <p class="bio">
+        <button class="bio-btn" aria-expanded="false" aria-controls="bio3">View Bio</button>
+        <p class="bio" id="bio3">
             Emma helps keep everything running smoothly, from serving customers
             to maintaining a warm and welcoming atmosphere.
         </p>
@@ -86,6 +91,8 @@
     <button id="apply-btn">Apply Now</button>
     <p id="apply-message">Send your CV to: jobs@dailycup.com</p>
 </section>
+
+</main>
 
 <!-- FOOTER -->
 <footer class="footer">
