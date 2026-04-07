@@ -64,8 +64,14 @@
   height: 360px;
   object-fit: cover;
   border-radius: 8px;
+  transition: transform 0.3s ease;
 }
 
+.welcome-img img:hover {
+  transform: scale(1.02);
+}
+
+/* BUTTON */
 .btn {
   display: inline-block;
   margin-top: 1.5rem;
@@ -75,6 +81,7 @@
   text-decoration: none;
   border-radius: 4px;
   font-weight: 600;
+  transition: background-color 0.3s ease;
 }
 
 .btn:hover {
@@ -82,7 +89,6 @@
 }
 
 /* WHY CHOOSE US SECTION */
-
 
 .why-section {
   background-color: #1D2C3C;
@@ -104,11 +110,19 @@
   gap: 1.5rem;
 }
 
+/* WHY CARDS */
 .why-card {
+  position: relative;
+  margin-top: 0;
   background-color: #F9F7F4;
   border-radius: 8px;
   padding: 2rem;
   text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.why-card:hover {
+  transform: translateY(-4px);
 }
 
 .why-icon {
@@ -132,7 +146,6 @@
   font-size: 0.95rem;
   line-height: 1.6;
 }
-
 
 /* OPENING HOURS SECTION */
 
@@ -210,5 +223,3 @@
     grid-template-columns: 1fr;
   }
 }
-
-
