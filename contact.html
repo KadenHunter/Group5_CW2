@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact The Daily Cup - make a reservation, book an event, leave feedback or send a general enquiry.">
     <title>The Daily Cup - Contact Us</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/contact.css">
@@ -29,8 +30,223 @@
     </header>
 
     <main>
-        <h1>Contact Us</h1>
+        <h1 class="page-title">Contact Us</h1>
+
+        <form id="contact-form" novalidate>
+
+            <!-- ENQUIRY TYPE DROPDOWN -->
+            <div class="form-group">
+                <label for="enquiry-type">What can we help you with?</label>
+                <select id="enquiry-type" name="enquiry-type" aria-required="true">
+                    <option value="">-- Please select --</option>
+                    <option value="general">General Enquiry</option>
+                    <option value="reservation">Table Reservation</option>
+                    <option value="event">Event Booking</option>
+                    <option value="feedback">Feedback</option>
+                </select>
+                <span class="error" id="enquiry-type-error" aria-live="polite"></span>
+            </div>
+
+            <!-- SHARED FIELDS - always visible -->
+            <div id="shared-fields">
+
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name"
+                        placeholder="e.g. John Smith"
+                        aria-required="true"
+                        aria-describedby="name-error">
+                    <span class="error" id="name-error" aria-live="polite"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email"
+                        placeholder="e.g. john@email.com"
+                        aria-required="true"
+                        aria-describedby="email-error">
+                    <span class="error" id="email-error" aria-live="polite"></span>
+                </div>
+
+            </div>
+
+            <!-- GENERAL ENQUIRY FIELDS -->
+            <div id="general-fields" class="conditional-fields">
+
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject"
+                        placeholder="e.g. Opening hours query"
+                        aria-describedby="subject-error">
+                    <span class="error" id="subject-error" aria-live="polite"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="general-message">Message</label>
+                    <textarea id="general-message" name="general-message"
+                        rows="5"
+                        placeholder="Type your message here..."
+                        aria-describedby="general-message-error"></textarea>
+                    <span class="error" id="general-message-error" aria-live="polite"></span>
+                </div>
+
+            </div>
+
+            <!-- TABLE RESERVATION FIELDS -->
+            <div id="reservation-fields" class="conditional-fields">
+
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone"
+                        placeholder="e.g. 07700900000"
+                        aria-describedby="phone-error">
+                    <span class="error" id="phone-error" aria-live="polite"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="date">Date</label>
+                    <input type="date" id="date" name="date"
+                        aria-describedby="date-error">
+                    <span class="error" id="date-error" aria-live="polite"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="time">Time</label>
+                    <input type="time" id="time" name="time"
+                        aria-describedby="time-error">
+                    <span class="error" id="time-error" aria-live="polite"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="guests">Number of Guests</label>
+                    <input type="number" id="guests" name="guests"
+                        min="1" max="10"
+                        placeholder="e.g. 2"
+                        aria-describedby="guests-error">
+                    <span class="error" id="guests-error" aria-live="polite"></span>
+                </div>
+
+            </div>
+
+            <!-- EVENT BOOKING FIELDS -->
+            <div id="event-fields" class="conditional-fields">
+
+                <div class="form-group">
+                    <label for="event-phone">Phone Number</label>
+                    <input type="tel" id="event-phone" name="event-phone"
+                        placeholder="e.g. 07700900000"
+                        aria-describedby="event-phone-error">
+                    <span class="error" id="event-phone-error" aria-live="polite"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="event-type">Type of Event</label>
+                    <select id="event-type" name="event-type"
+                        aria-describedby="event-type-error">
+                        <option value="">-- Please select --</option>
+                        <option value="birthday">Birthday</option>
+                        <option value="corporate">Corporate</option>
+                        <option value="private">Private Party</option>
+                        <option value="other">Other</option>
+                    </select>
+                    <span class="error" id="event-type-error" aria-live="polite"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="event-date">Date</label>
+                    <input type="date" id="event-date" name="event-date"
+                        aria-describedby="event-date-error">
+                    <span class="error" id="event-date-error" aria-live="polite"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="event-message">Additional Details</label>
+                    <textarea id="event-message" name="event-message"
+                        rows="5"
+                        placeholder="Tell us more about your event..."
+                        aria-describedby="event-message-error"></textarea>
+                    <span class="error" id="event-message-error" aria-live="polite"></span>
+                </div>
+
+            </div>
+
+            <!-- FEEDBACK FIELDS -->
+            <div id="feedback-fields" class="conditional-fields">
+
+                <div class="form-group">
+                    <label>Rating</label>
+                    <div class="star-rating" role="group" aria-label="Star rating">
+                        <input type="radio" id="star5" name="rating" value="5">
+                        <label for="star5">★</label>
+                        <input type="radio" id="star4" name="rating" value="4">
+                        <label for="star4">★</label>
+                        <input type="radio" id="star3" name="rating" value="3">
+                        <label for="star3">★</label>
+                        <input type="radio" id="star2" name="rating" value="2">
+                        <label for="star2">★</label>
+                        <input type="radio" id="star1" name="rating" value="1">
+                        <label for="star1">★</label>
+                    </div>
+                    <span class="error" id="rating-error" aria-live="polite"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="feedback-message">Your Feedback</label>
+                    <textarea id="feedback-message" name="feedback-message"
+                        rows="5"
+                        placeholder="Tell us about your experience..."
+                        aria-describedby="feedback-message-error"></textarea>
+                    <span class="error" id="feedback-message-error" aria-live="polite"></span>
+                </div>
+
+            </div>
+
+            <!-- SUBMIT BUTTON -->
+            <div class="form-group">
+                <button type="submit" id="submit-btn">Send Message</button>
+            </div>
+
+            <!-- SUCCESS MESSAGE -->
+            <div id="success-message">
+                <p>Thank you! Your message has been sent. We will get back to you soon.</p>
+            </div>
+
+        </form>
+
     </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-inner">
+
+            <div class="footer-brand">
+                <p class="footer-logo-text">The Daily Cup</p>
+                <p class="footer-tagline">Your Daily Coffee Fix.</p>
+            </div>
+
+            <div class="footer-socials">
+                <a href="https://www.instagram.com/" class="social-icon" target="_blank" aria-label="Instagram">
+                    <img src="assets/instagram.png" alt="Instagram">
+                </a>
+                <a href="https://www.facebook.com/" class="social-icon" target="_blank" aria-label="Facebook">
+                    <img src="assets/facebook.png" alt="Facebook">
+                </a>
+                <a href="https://www.tiktok.com/" class="social-icon" target="_blank" aria-label="TikTok">
+                    <img src="assets/tiktok.png" alt="TikTok">
+                </a>
+            </div>
+
+            <div class="footer-contact">
+                <a href="mailto:info@thedailycup.com" class="footer-email">info@thedailycup.com</a>
+                <a href="contact.html" class="footer-contact-link">Contact Us</a>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; <span id="year"></span> The Daily Cup. All rights reserved.</p>
+        </div>
+    </footer>
 
     <script src="js/jquery.js"></script>
     <script src="js/contact.js"></script>
