@@ -37,11 +37,13 @@ a {
 
 /* Navbar layout */
 .navbar-inner {
-  width: 100%;
-  padding-right: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
   display: flex;
   align-items: center;
   height: 70px;
+  width: 100%;
 }
 
 /* Logo */
@@ -76,6 +78,7 @@ a {
   gap: 5px;
   background: none;
   border: none;
+  cursor: pointer;
 }
 
 /* Hamburger lines */
@@ -114,10 +117,9 @@ a {
   max-width: 1200px;
   margin: 0 auto;
   padding: 2rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
   gap: 2rem;
 }
 
@@ -140,12 +142,13 @@ a {
   display: flex;
   gap: 1rem;
   align-items: center;
+  justify-content: center;
 }
 
 /* Social icon box */
 .social-icon {
-  width: 75px;
-  height: 75px;
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.08);
   display: flex;
@@ -155,8 +158,8 @@ a {
 
 /* Social icon image */
 .social-icon img {
-  width: 46px;
-  height: 46px;
+  width: 34px;
+  height: 34px;
   filter: brightness(0) invert(1);
 }
 
@@ -166,6 +169,15 @@ a {
   flex-direction: column;
   gap: 6px;
   text-align: right;
+  justify-self: end;
+}
+
+/* Address */
+.footer-address {
+  font-style: normal;
+  font-size: 0.9rem;
+  color: #D4C4B3;
+  margin: 0;
 }
 
 /* Contact links */
@@ -218,7 +230,7 @@ a {
 
   /* Footer mobile layout */
   .footer-inner {
-    flex-direction: column;
+    grid-template-columns: 1fr;
     align-items: center;
     text-align: center;
   }
@@ -226,5 +238,6 @@ a {
   /* Center contact on mobile */
   .footer-contact {
     text-align: center;
+    justify-self: center;
   }
 }
