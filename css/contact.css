@@ -132,6 +132,17 @@ body {
     margin-top: 20px;
 }
 
+/* fix the white sapce at bottom of footer */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+
 /* Tighten the padding a little on smaller screens */
 @media (max-width: 768px) {
     #contact-form {
