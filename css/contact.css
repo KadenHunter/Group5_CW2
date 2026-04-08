@@ -11,14 +11,14 @@ body {
     font-size: 2.2rem;
 }
 
-/* The form itself — centred with a comfortable max width */
+/* The form itself */
 #contact-form {
     max-width: 600px;
     margin: 0 auto;
     padding: 0 20px 60px;
 }
 
-/* Each label + input pair */
+/* Each label */
 .form-group {
     margin-bottom: 20px;
     display: flex;
@@ -33,7 +33,7 @@ body {
     margin-bottom: 6px;
 }
 
-/* All text inputs, selects, and textareas share the same base style */
+/* All text inputs */
 .form-group input,
 .form-group select,
 .form-group textarea {
@@ -75,7 +75,7 @@ body {
     display: none;
 }
 
-/* Star rating — laid out right-to-left so CSS hover trick works */
+/* Star rating */
 .star-rating {
     display: flex;
     flex-direction: row-reverse;
@@ -104,7 +104,7 @@ body {
     color: #f5a623;
 }
 
-/* Submit button — full width, matches the brand colour */
+/* Submit button */
 #submit-btn {
     width: 100%;
     padding: 12px;
@@ -121,7 +121,7 @@ body {
     background-color: #2a3f57;
 }
 
-/* Green-ish confirmation banner after sending */
+/* Confirmation banner after sending */
 #success-message {
     display: none;
     background-color: #1D2C3C;
