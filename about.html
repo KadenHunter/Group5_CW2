@@ -4,83 +4,182 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Daily Cup - About Us</title>
-    <link rel="icon" href="assets/favicon.png" type="image/png">
+
+    <link rel="icon" href="assets/favicon.png">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/home.css">
     <link rel="stylesheet" href="css/about.css">
 </head>
-<body>
 
-    <!-- Navbar code -->
-    <header class="navbar">
-        <div class="navbar-inner">
-            <a href="index.html" class="navbar-logo">
-                <img src="assets/logo.png" alt="The Daily Cup logo" class="logo-img">
-            </a>
-            <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
-                <span></span><span></span><span></span>
-            </button>
-            <nav class="nav-links" id="nav-links">
-                <a href="index.html" class="nav-link">Home</a>
-                <a href="about.html" class="nav-link active">About Us</a>
-                <a href="menu.html" class="nav-link">Menu</a>
-                <a href="staff.html" class="nav-link">Our Staff</a>
-                <a href="contact.html" class="nav-link">Contact Us</a>
-            </nav>
-        </div>
-    </header>
+<body class="home-page">
 
-    <main>
-        <h1>About Us</h1>
-    </main>
+<!-- NAVBAR -->
+<header class="navbar">
+    <div class="navbar-inner">
+        <a href="index.html" class="navbar-logo">
+            <img src="assets/logo.png" class="logo-img">
+        </a>
 
-    <script src="js/jquery.js"></script>
-    <script src="js/about.js"></script>
-</body>
-</html>
+        <button class="hamburger" id="hamburger">
+            <span></span><span></span><span></span>
+        </button>
+
+        <nav class="nav-links" id="nav-links">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="about.html" class="nav-link active">About Us</a>
+            <a href="menu.html" class="nav-link">Menu</a>
+            <a href="staff.html" class="nav-link">Our Staff</a>
+            <a href="contact.html" class="nav-link">Contact Us</a>
+        </nav>
+    </div>
+</header>
+
+
+<!-- BANNER -->
+<section class="banner">
+    <img src="assets/coffee.jpg" class="banner-img">
+    <div class="banner-overlay">
+        <h1 class="about-title">About Us</h1>
+    </div>
+</section>
+
 
 <main>
- <main>
+    <section class="feature-strip">
 
-    <!-- Banner -->
-    <div class="banner">
-        <img src="assets/coffee.jpg" class="banner-img" alt="Coffee shop">
-        <div class="banner-overlay">
-            <h1 style="color: white;">About Us</h1>
+    <div class="feature">
+        <h3>Free Wi-Fi</h3>
+        <p>Stay connected while you relax or work</p>
+    </div>
+
+    <div class="feature">
+        <h3>Freshly Made</h3>
+        <p>Drinks prepared fresh every day</p>
+    </div>
+
+    <div class="feature">
+        <h3>Central Belfast</h3>
+        <p>Easy to find and visit anytime</p>
+    </div>
+
+</section>
+
+<!-- ABOUT -->
+<section class="welcome">
+    <div class="welcome-text">
+        <h1>About The Daily Cup</h1>
+        <p>
+            Located in Belfast, The Daily Cup is a modern coffee shop focused on quality coffee and a welcoming atmosphere.
+        </p>
+        <p>
+            Whether you're stopping by for a quick drink or staying to relax or study, we aim to create a space that feels comfortable and inviting.
+        </p>
+
+        <a href="staff.html" class="btn">Meet the Team</a>
+    </div>
+
+    <div class="welcome-img">
+        <img src="assets/belfast.jpg" alt="Belfast">
+    </div>
+</section>
+
+
+<!-- MISSION -->
+<section class="app-section">
+    <div class="app-inner">
+
+        <div class="app-text">
+            <h2>Our Mission</h2>
+            <p>
+                Our mission is to serve high-quality coffee while building a strong sense of community.
+                We focus on consistency, friendly service, and creating a relaxed space for everyone.
+            </p>
+        </div>
+
+        <div class="app-img">
+            <img src="assets/worker.jpg" alt="Barista">
+        </div>
+
+    </div>
+</section>
+<section class="why-section">
+    <h2>All About Us!</h2>
+
+    <div class="why-grid">
+
+        <div class="why-card">
+            <img src="assets/barista.png" class="why-icon">
+            <h3>Expertly Made Drinks</h3>
+            <p>Our baristas take pride in preparing every drink with care and attention to detail.</p>
+        </div>
+
+        <div class="why-card">
+            <img src="assets/conversation.png" class="why-icon">
+            <h3>Social Atmosphere</h3>
+            <p>A great place to meet friends, chat, and enjoy a relaxed environment.</p>
+        </div>
+
+        <div class="why-card">
+            <img src="assets/laptop.png" class="why-icon">
+            <h3>Work-Friendly Space</h3>
+            <p>Perfect for studying or working with a calm setting and free Wi-Fi.</p>
+        </div>
+
+        <div class="why-card">
+            <img src="assets/map.png" class="why-icon">
+            <h3>City Centre Location</h3>
+            <p>Based in Belfast, making it easy to stop by throughout your day.</p>
+        </div>
+
+    </div>
+</section>
+    </div>
+</section>
+<ul class="feature-list">
+    <li>High quality ingredients</li>
+    <li>Friendly service</li>
+    <li>Comfortable atmosphere</li>
+</ul>
+
+</main>
+
+<section class="testimonial">
+    <div class="testimonial-box">
+        <p>
+            "A perfect place to relax with amazing coffee and a welcoming atmosphere."
+        </p>
+        <h4>– Local Customer</h4>
+    </div>
+</section>
+
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="footer-inner">
+        <div class="footer-brand">
+            <p class="footer-logo-text">The Daily Cup</p>
+            <p class="footer-tagline">Your Daily Coffee Fix.</p>
+        </div>
+
+        <div class="footer-socials">
+            <a href="#" class="social-icon"><img src="./assets/instagram.png"></a>
+            <a href="#" class="social-icon"><img src="./assets/facebook.png"></a>
+            <a href="#" class="social-icon"><img src="./assets/tiktok.png"></a>
+        </div>
+
+        <div class="footer-contact">
+            <a href="#" class="footer-email">info@thedailycup.com</a>
+            <a href="contact.html" class="footer-contact-link">Contact Us</a>
         </div>
     </div>
 
-    <!-- Who We Are -->
-    <section class="welcome">
-        <div class="welcome-text">
-            <h2>Who We Are</h2>
-            <p>
-                The Daily Cup is an independent coffee shop based in Belfast,
-                dedicated to serving high-quality coffee in a warm and welcoming environment.
-            </p>
+    <div class="footer-bottom">
+        <p>&copy; <span id="year"></span> The Daily Cup</p>
+    </div>
+</footer>
 
-            <h3>Location</h3>
-            <p>Belfast, Northern Ireland</p>
-        </div>
+<script src="js/jquery.js"></script>
+<script src="js/about.js"></script>
 
-        <div class="welcome-img">
-            <img src="assets/belfast.jpg" alt="Belfast">
-        </div>
-    </section>
-
-    <!-- Mission -->
-    <section class="app-section">
-        <div class="app-inner">
-            <div class="app-text">
-                <h2>Our Mission</h2>
-                <p>
-                    Our mission is to provide consistently great coffee while building a strong sense of community.
-                </p>
-            </div>
-
-            <div class="app-img">
-                <img src="assets/worker.jpg" alt="Barista making coffee">
-            </div>
-        </div>
-    </section>
-
-</main>
+</body>
+</html>
