@@ -54,4 +54,23 @@ $(document).ready(function () {
         }
     );
 
+    // red shows up if the coffee shop is currently closed based on the current time and day
+    var now = new Date();
+    var day = now.getDay();
+    var time = now.getHours() * 60 + now.getMinutes();
+
+    var open = (day === 0 || day === 6) ? 540 : 450;
+    var close = 1080;
+
+    var dayNames = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+
+    $('.day').each(function () {
+        if ($(this).find('span:first').text() === dayNames[day]) {
+            if (time < open || time >= close) {
+                $(this).find('span:last').css('color', 'red');
+            }
+            $(this).css('font-weight', 'bold');
+        }
+    });
+
 });
