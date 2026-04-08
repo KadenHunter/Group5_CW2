@@ -1,12 +1,3 @@
-/* PAGE BACKGROUND */
-body {
-  font-family: Arial, sans-serif;
-  background-color: #F9F7F4;
-  margin: 0;
-  padding-top: 70px;
-  text-align: center;
-}
-
 /* PAGE TITLE */
 .title {
   margin: 30px 0 10px;
@@ -37,35 +28,35 @@ body {
   transform: translateY(-5px);
 }
 
-/* IMAGE */
+/* Image */
 .staff-card img {
   width: 100%;
-  height: 200px;        
-  object-fit: cover;    
+  height: 200px;
+  object-fit: cover;
   border-radius: 8px;
   margin-bottom: 10px;
 }
 
-/* NAME */
+/* Name */
 .staff-card h3 {
   color: #1D2C3C;
   margin-bottom: 5px;
 }
 
-/* ROLE */
+/* Role */
 .staff-card p {
   color: #666;
   font-size: 0.9rem;
 }
 
-/* BIO TEXT */
+/* Bio text */
 .bio {
   display: none;
   margin-top: 10px;
   font-size: 0.85rem;
 }
 
-/* BUTTON */
+/* Button */
 button {
   background-color: #1D2C3C;
   color: #F9F7F4;
@@ -89,6 +80,7 @@ button:hover {
   background-color: #1D2C3C;
   color: #F9F7F4;
   border-radius: 8px;
+  text-align: center;
 }
 
 #apply-message {
