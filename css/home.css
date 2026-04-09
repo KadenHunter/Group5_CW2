@@ -130,6 +130,20 @@
   line-height: 1.6;
 }
 
+/* hide card description by default, revealed on click */
+.why-card p {
+    display: none;
+}
+
+.why-card.open p {
+    display: block;
+}
+
+/* show a pointer that the card is clickable */
+.why-card {
+    cursor: pointer;
+}
+
 /* OPENING HOURS SECTION */
 
 .hours-section {

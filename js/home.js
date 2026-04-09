@@ -17,22 +17,25 @@ $(document).ready(function () {
         $('#nav-links').removeClass('open');
     });
 
-    // fade each why-card in one at a time instead of slideDown
+    // fade each why-card in one at a time on load
     var delay = 100;
     $('.why-card').each(function () {
         $(this).css('opacity', 0).delay(delay).animate({ opacity: 1 }, 600);
         delay += 250;
     });
 
-    // hover effect on why-cards
-    $('.why-card').hover(
-        function () {
-            $(this).stop().animate({ marginTop: '-5px' }, 150);
-        },
-        function () {
-            $(this).stop().animate({ marginTop: '0px' }, 150);
+    // click a why-card to reveal or hide its description
+    $('.why-card').click(function () {
+        var $p = $(this).find('p');
+
+        if ($(this).hasClass('open')) {
+            $p.slideUp(250);
+            $(this).removeClass('open');
+        } else {
+            $p.slideDown(300);
+            $(this).addClass('open');
         }
-    );
+    });
 
     // hover effect on nav links
     $('.nav-link').hover(
@@ -54,7 +57,7 @@ $(document).ready(function () {
         }
     );
 
-    // red shows up if the coffee shop is currently closed based on the current time and day
+    // highlight today's day and turn the time red if currently closed
     var now = new Date();
     var day = now.getDay();
     var time = now.getHours() * 60 + now.getMinutes();
