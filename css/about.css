@@ -1,4 +1,4 @@
-/* ===== ABOUT PAGE STYLING ===== */
+/* ABOUT PAGE STYLING */
 
 /* Banner text */
 .about-title {
@@ -7,12 +7,12 @@
   font-weight: bold;
 }
 
-/* ===== SECTION SPACING ===== */
+/* Section Spacing*/
 section {
   padding: 3rem 2rem;
 }
 
-/* ===== WELCOME + MISSION LAYOUT (FIXED) ===== */
+/* Welcome + Mission Layout */
 .welcome,
 .app-inner {
   display: flex;
@@ -32,7 +32,7 @@ section {
   }
 }
 
-/* ===== TEXT ===== */
+/* Text*/
 .welcome-text,
 .app-text {
   max-width: 500px;
@@ -45,7 +45,7 @@ section {
   color: #444;
 }
 
-/* ===== IMAGES (FIXES SIZE + CROPPING) ===== */
+/* Images(Fixes Size + Cropping)  */
 .welcome-img img,
 .app-img img {
   width: 100%;
@@ -70,13 +70,13 @@ section {
   transition: 0.3s;
 }
 
-/* ===== BUTTON ===== */
+/* Button*/
 .btn {
   margin-top: 1rem;
   display: inline-block;
 }
 
-/* ===== FEATURE STRIP ===== */
+/*  Feature Strip  */
 .feature-strip {
   display: flex;
   justify-content: space-around;
@@ -90,7 +90,7 @@ section {
   margin-bottom: 0.5rem;
 }
 
-/* ===== WHY SECTION ===== */
+/* Why section  */
 .why-section h2 {
   text-align: center;
   margin-bottom: 2rem;
@@ -110,31 +110,8 @@ section {
   transition: 0.3s;
 }
 
-/* ===== FEATURE LIST ===== */
-.feature-list {
-  list-style: none;
-  padding: 0;
-  margin-top: 1.5rem;
-}
 
-.feature-list li {
-  position: relative;
-  padding-left: 30px;
-  margin-bottom: 12px;
-  font-size: 1rem;
-  color: #333;
-}
-
-.feature-list li::before {
-  content: "✔";
-  position: absolute;
-  left: 0;
-  top: 0;
-  color: #C49A6C;
-  font-weight: bold;
-}
-
-/* ===== GALLERY ===== */
+/* Gallery */
 .gallery {
   text-align: center;
 }
