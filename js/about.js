@@ -33,4 +33,14 @@ $(document).ready(function () {
     );
 
 });
+$(document).ready(function () {
+
+    $('.faq-question').click(function () {
+        $(this).next('.faq-answer').slideToggle();
+
+        // close others (optional but nice)
+        $('.faq-answer').not($(this).next()).slideUp();
+    });
+
+});
         

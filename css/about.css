@@ -1,4 +1,4 @@
-/* About Page Styling */
+/* ===== ABOUT PAGE STYLING ===== */
 
 /* Banner text */
 .about-title {
@@ -7,52 +7,76 @@
   font-weight: bold;
 }
 
-/* Better spacing */
+/* ===== SECTION SPACING ===== */
+section {
+  padding: 3rem 2rem;
+}
+
+/* ===== WELCOME + MISSION LAYOUT (FIXED) ===== */
+.welcome,
+.app-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Stack on mobile */
+@media (max-width: 768px) {
+  .welcome,
+  .app-inner {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+/* ===== TEXT ===== */
+.welcome-text,
+.app-text {
+  max-width: 500px;
+}
+
 .welcome-text p,
 .app-text p {
   margin-bottom: 1rem;
   line-height: 1.7;
+  color: #444;
 }
 
-/* Image improvements */
+/* ===== IMAGES (FIXES SIZE + CROPPING) ===== */
 .welcome-img img,
 .app-img img {
   width: 100%;
   max-width: 450px;
-  height: auto;
+  height: 300px;
+  object-fit: cover;
   border-radius: 10px;
   display: block;
 }
 
-/* Center images nicely */
+/* Center images */
 .welcome-img,
 .app-img {
   display: flex;
   justify-content: center;
 }
 
-/* Add slight hover effect */
+/* Hover effect */
 .welcome-img img:hover,
 .app-img img:hover {
   transform: scale(1.03);
   transition: 0.3s;
 }
 
-/* Button spacing */
+/* ===== BUTTON ===== */
 .btn {
   margin-top: 1rem;
   display: inline-block;
 }
 
-/* Section title styling */
-.why-section h2 {
-  text-align: center;
-  margin-bottom: 2rem;
-}
-.why-card:hover .why-icon {
-  transform: scale(1.1);
-  transition: 0.3s;
-}
+/* ===== FEATURE STRIP ===== */
 .feature-strip {
   display: flex;
   justify-content: space-around;
@@ -65,41 +89,30 @@
 .feature h3 {
   margin-bottom: 0.5rem;
 }
-.testimonial {
-  background: #F9F7F4;
-  padding: 3rem 1.5rem;
-  display: flex;
-  justify-content: center;
-}
 
-.testimonial-box {
-  max-width: 700px;
+/* ===== WHY SECTION ===== */
+.why-section h2 {
   text-align: center;
+  margin-bottom: 2rem;
 }
 
-.testimonial p {
-  font-size: 1.2rem;
-  font-style: italic;
-  color: #333;
-  line-height: 1.6;
+/* Icon styling */
+.why-icon {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  margin-bottom: 1rem;
 }
 
-.testimonial h4 {
-  margin-top: 1rem;
-  color: #1D2C3C;
-  font-weight: 600;
+/* Icon hover */
+.why-card:hover .why-icon {
+  transform: scale(1.1);
+  transition: 0.3s;
 }
-.testimonial-box {
-  background: white;
-  padding: 2rem;
-  border-radius: 12px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
-}
-section {
-  padding-top: 2rem;
-}
+
+/* ===== FEATURE LIST ===== */
 .feature-list {
-  list-style: none;        
+  list-style: none;
   padding: 0;
   margin-top: 1.5rem;
 }
@@ -112,12 +125,96 @@ section {
   color: #333;
 }
 
-/* custom tick icon */
 .feature-list li::before {
   content: "✔";
   position: absolute;
   left: 0;
   top: 0;
-  color: #C49A6C;   /* nice coffee colour */
+  color: #C49A6C;
   font-weight: bold;
+}
+
+/* ===== GALLERY ===== */
+.gallery {
+  text-align: center;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.gallery-grid img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* ===== TESTIMONIAL ===== */
+.testimonial {
+  background: #F9F7F4;
+  display: flex;
+  justify-content: center;
+}
+
+.testimonial-box {
+  max-width: 700px;
+  text-align: center;
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+.testimonial p {
+  font-size: 1.2rem;
+  font-style: italic;
+  color: #333;
+}
+
+.testimonial h4 {
+  margin-top: 1rem;
+  color: #1D2C3C;
+}
+
+/* ===== FAQ ===== */
+.faq {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.faq h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.faq-item {
+  margin-bottom: 1rem;
+}
+
+.faq-question {
+  width: 100%;
+  text-align: left;
+  padding: 1rem;
+  background: #1D2C3C;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 6px;
+}
+
+.faq-question:hover {
+  background: #C49A6C;
+}
+
+.faq-answer {
+  display: none;
+  padding: 1rem;
+  background: #f9f7f4;
+  border-radius: 6px;
+  margin-top: 5px;
 }
