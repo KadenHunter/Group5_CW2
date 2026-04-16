@@ -1,79 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Basic page metadata -->
+    <meta charset="UTF-8"> <!-- Character encoding -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsive design -->
     <meta name="description" content="Meet the team behind The Daily Cup - our friendly and experienced staff who make your coffee experience special.">
+
+    <!-- Page title -->
     <title>The Daily Cup - Our Staff</title>
 
+    <!-- Favicon -->
     <link rel="icon" href="assets/favicon.png" type="image/png">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/staff.css">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/styles.css"> <!-- Global styles -->
+    <link rel="stylesheet" href="css/staff.css"> <!-- Staff page-specific styles -->
 </head>
 
 <body>
 
-<!-- NAVBAR -->
+<!-- ================= NAVBAR ================= -->
 <header class="navbar">
     <div class="navbar-inner">
+
+        <!-- Logo linking to homepage -->
         <a href="index.html" class="navbar-logo">
             <img src="assets/logo.png" alt="The Daily Cup logo" class="logo-img">
         </a>
 
+        <!-- Hamburger menu button (for mobile navigation) -->
         <button class="hamburger" id="hamburger"
             aria-label="Open menu"
             aria-expanded="false">
             <span></span><span></span><span></span>
         </button>
 
-       <nav class="nav-links" id="nav-links">
-    <a href="index.html" class="nav-link">Home</a>
-    <a href="about.html" class="nav-link">About Us</a>
-    <a href="menu.html" class="nav-link">Menu</a>
-    <a href="staff.html" class="nav-link active">Our Staff</a>
-    <a href="contact.html" class="nav-link">Contact Us</a>
-</nav>
+        <!-- Navigation links -->
+        <nav class="nav-links" id="nav-links">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="about.html" class="nav-link">About Us</a>
+            <a href="menu.html" class="nav-link">Menu</a>
+            <a href="staff.html" class="nav-link active">Our Staff</a> <!-- Active page -->
+            <a href="contact.html" class="nav-link">Contact Us</a>
+        </nav>
     </div>
 </header>
 
 <main>
 
-<!-- PAGE TITLE -->
+<!-- ================= PAGE TITLE ================= -->
 <h1 class="title">Meet Our Team</h1>
 
-<!-- STAFF SECTION -->
+<!-- ================= STAFF SECTION ================= -->
 <section class="staff-container">
 
-    <!-- STAFF MEMBER -->
+    <!-- ===== STAFF MEMBER 1 ===== -->
     <div class="staff-card">
-        <img src="assets/staff1.jpg" alt="Sarah - Head Barista">
-        <h3>Sarah</h3>
-        <p class="role">Head Barista</p>
+        <img src="assets/staff1.jpg" alt="Sarah - Head Barista"> <!-- Staff image -->
+        <h3>Sarah</h3> <!-- Name -->
+        <p class="role">Head Barista</p> <!-- Job title -->
+
+        <!-- Button toggles visibility of bio -->
         <button class="bio-btn" aria-expanded="false" aria-controls="bio1">View Bio</button>
+
+        <!-- Hidden/expandable bio -->
         <p class="bio" id="bio1">
             Sarah leads our coffee team and brings over 5 years of experience.
             She specialises in latte art and is passionate about creating the perfect cup every time.
         </p>
     </div>
 
-    <!-- STAFF MEMBER -->
+    <!-- ===== STAFF MEMBER 2 ===== -->
     <div class="staff-card">
         <img src="assets/staff2.jpg" alt="John - Coffee Specialist">
         <h3>John</h3>
         <p class="role">Coffee Specialist</p>
+
         <button class="bio-btn" aria-expanded="false" aria-controls="bio2">View Bio</button>
+
         <p class="bio" id="bio2">
             John focuses on sourcing and brewing high-quality beans.
             He enjoys experimenting with different brewing methods to bring out unique flavours.
         </p>
     </div>
 
-    <!-- STAFF MEMBER -->
+    <!-- ===== STAFF MEMBER 3 ===== -->
     <div class="staff-card">
         <img src="assets/staff3.jpg" alt="Emma - Cafe Assistant">
         <h3>Emma</h3>
         <p class="role">Cafe Assistant</p>
+
         <button class="bio-btn" aria-expanded="false" aria-controls="bio3">View Bio</button>
+
         <p class="bio" id="bio3">
             Emma helps keep everything running smoothly, from serving customers
             to maintaining a warm and welcoming atmosphere.
@@ -82,26 +100,35 @@
 
 </section>
 
-<!-- HIRING SECTION -->
+<!-- ================= HIRING SECTION ================= -->
 <section class="hiring">
     <h2>Join Our Team</h2>
+
+    <!-- Recruitment message -->
     <p>
         We're always looking for friendly, motivated people who enjoy working in a fast-paced café environment.
     </p>
+
+    <!-- Apply button (likely triggers JS interaction) -->
     <button id="apply-btn">Apply Now</button>
+
+    <!-- Hidden or dynamically shown message -->
     <p id="apply-message">Send your CV to: jobs@dailycup.com</p>
 </section>
 
 </main>
 
-<!-- FOOTER -->
+<!-- ================= FOOTER ================= -->
 <footer class="footer">
     <div class="footer-inner">
+
+        <!-- Branding -->
         <div class="footer-brand">
             <p class="footer-logo-text">The Daily Cup</p>
             <p class="footer-tagline">Your Daily Coffee Fix.</p>
         </div>
 
+        <!-- Social media links -->
         <div class="footer-socials">
             <a href="https://www.instagram.com/" class="social-icon" target="_blank">
                 <img src="./assets/instagram.png" alt="Instagram">
@@ -114,6 +141,7 @@
             </a>
         </div>
 
+        <!-- Contact information -->
         <div class="footer-contact">
             <address class="footer-address">14 Castle Street, Belfast, BT1 1HE</address>
             <a href="mailto:info@thedailycup.com" class="footer-email">info@thedailycup.com</a>
@@ -121,14 +149,15 @@
         </div>
     </div>
 
+    <!-- Bottom copyright section -->
     <div class="footer-bottom">
         <p>&copy; <span id="year"></span> The Daily Cup. All rights reserved.</p>
     </div>
 </footer>
 
-<!-- JAVASCRIPT -->
-<script src="js/jquery.js"></script>
-<script src="js/staff.js"></script>
+<!-- ================= JAVASCRIPT ================= -->
+<script src="js/jquery.js"></script> <!-- jQuery library -->
+<script src="js/staff.js"></script> <!-- Staff page interactivity (bio toggle, etc.) -->
 
 </body>
 </html>

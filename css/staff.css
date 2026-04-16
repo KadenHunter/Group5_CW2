@@ -1,98 +1,101 @@
-/* PAGE TITLE */
+/* ================= PAGE TITLE ================= */
 .title {
-  margin: 30px 0 10px;
-  font-size: 2.2rem;
-  color: #1D2C3C;
+  margin: 30px 0 10px; /* Space above and below title */
+  font-size: 2.2rem;   /* Large heading size */
+  color: #1D2C3C;      /* Dark blue colour */
 }
 
-/* STAFF SECTION */
+/* ================= STAFF SECTION ================= */
 .staff-container {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 25px;
-  padding: 20px;
+  display: flex;              /* Flexbox layout */
+  justify-content: center;    /* Center items horizontally */
+  flex-wrap: wrap;            /* Allow cards to wrap to next line */
+  gap: 25px;                  /* Space between cards */
+  padding: 20px;              /* Inner spacing */
 }
 
-/* STAFF CARD */
+/* ================= STAFF CARD ================= */
 .staff-card {
-  background: white;
-  width: 230px;
-  padding: 15px;
-  border-radius: 10px;
-  border: 1px solid #D4C4B3;
-  transition: transform 0.2s ease;
+  background: white;              /* Card background */
+  width: 230px;                  /* Fixed card width */
+  padding: 15px;                 /* Inner spacing */
+  border-radius: 10px;           /* Rounded corners */
+  border: 1px solid #D4C4B3;     /* Light border */
+  transition: transform 0.2s ease; /* Smooth hover animation */
 }
 
+/* Hover effect for card */
 .staff-card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-5px); /* Lift card slightly */
 }
 
-/* Image */
+/* ================= IMAGE ================= */
 .staff-card img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 8px;
-  margin-bottom: 10px;
+  width: 100%;          /* Full width of card */
+  height: 200px;        /* Fixed height */
+  object-fit: cover;    /* Crop image to fit neatly */
+  border-radius: 8px;   /* Slightly rounded corners */
+  margin-bottom: 10px;  /* Space below image */
 }
 
-/* Name */
+/* ================= NAME ================= */
 .staff-card h3 {
-  color: #1D2C3C;
-  margin-bottom: 5px;
+  color: #1D2C3C;     /* Dark blue text */
+  margin-bottom: 5px; /* Space below name */
 }
 
-/* Role */
+/* ================= ROLE TEXT ================= */
 .staff-card p {
-  color: #666;
-  font-size: 0.9rem;
+  color: #666;         /* Grey text */
+  font-size: 0.9rem;   /* Slightly smaller text */
 }
 
-/* Bio text */
+/* ================= BIO TEXT ================= */
 .bio {
-  display: none;
-  margin-top: 10px;
-  font-size: 0.85rem;
+  display: none;       /* Hidden by default (shown via JS) */
+  margin-top: 10px;    /* Space above bio */
+  font-size: 0.85rem;  /* Smaller text */
 }
 
-/* Button */
+/* ================= BUTTON ================= */
 button {
-  background-color: #1D2C3C;
-  color: #F9F7F4;
-  border: none;
-  padding: 8px 12px;
-  margin-top: 10px;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+  background-color: #1D2C3C; /* Dark blue background */
+  color: #F9F7F4;            /* Light text */
+  border: none;              /* Remove default border */
+  padding: 8px 12px;         /* Button size */
+  margin-top: 10px;          /* Space above button */
+  border-radius: 4px;        /* Slight rounding */
+  cursor: pointer;           /* Pointer cursor on hover */
+  transition: background-color 0.3s ease; /* Smooth hover effect */
 }
 
+/* Button hover effect */
 button:hover {
-  background-color: #2a3f57;
+  background-color: #2a3f57; /* Slightly lighter blue */
 }
 
-/* HIRING SECTION */
+/* ================= HIRING SECTION ================= */
 .hiring {
-  margin: 40px auto;
-  padding: 25px;
-  max-width: 500px;
-  background-color: #1D2C3C;
-  color: #F9F7F4;
-  border-radius: 8px;
-  text-align: center;
+  margin: 40px auto;          /* Center with vertical spacing */
+  padding: 25px;              /* Inner spacing */
+  max-width: 500px;           /* Limit width */
+  background-color: #1D2C3C;  /* Dark background */
+  color: #F9F7F4;             /* Light text */
+  border-radius: 8px;         /* Rounded corners */
+  text-align: center;         /* Center text */
 }
 
+/* Hidden application message */
 #apply-message {
-  display: none;
-  margin-top: 10px;
-  font-size: 0.9rem;
+  display: none;        /* Hidden until triggered */
+  margin-top: 10px;     /* Space above */
+  font-size: 0.9rem;    /* Text size */
 }
 
-/* MOBILE */
+/* ================= MOBILE STYLES ================= */
 @media (max-width: 768px) {
   .staff-container {
-    flex-direction: column;
-    align-items: center;
+    flex-direction: column;  /* Stack cards vertically */
+    align-items: center;     /* Center cards */
   }
 }
