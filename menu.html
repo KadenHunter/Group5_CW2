@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Daily Cup - Menu</title>
+    <link rel="icon" href="assets/favicon.png" type="image/png">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/menu.css">
+</head>
+<body>
+
+    <!-- Navbar code -->
+    <header class="navbar">
+        <div class="navbar-inner">
+            <a href="index.html" class="navbar-logo">
+                <img src="assets/logo.png" alt="The Daily Cup logo" class="logo-img">
+            </a>
+            <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+            <nav class="nav-links" id="nav-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About Us</a>
+                <a href="menu.html" class="nav-link active">Menu</a>
+                <a href="staff.html" class="nav-link">Our Staff</a>
+                <a href="contact.html" class="nav-link">Contact Us</a>
+            </nav>
+        </div>
+    </header>
+
+    </main>
+<h1>Menu</h1>
+
+<!-- FILTER BUTTONS -->
+<div class="filters">
+  <button onclick="filterMenu('all')" class="active">All</button>
+  <button onclick="filterMenu('drink')">Drinks</button>
+  <button onclick="filterMenu('food')">Food</button>
+  <button onclick="filterMenu('vegan')">Vegan</button>
+</div>
+
+<!-- MENU GRID -->
+<div class="menu-container">
+
+  <div class="card drink">
+    <img src="assets/latte-coffee.jpg">
+    <div class="overlay">
+      <h3>Latte</h3>
+      <p>Espresso with steamed milk</p>
+      <span>£3.20</span>
+    </div>
+  </div>
+
+<div class="card drink vegan">
+  <img src="assets/matcha.jpg">
+  <div class="overlay">
+    <h3>Matcha Latte</h3>
+    <p>Green tea with plant-based milk</p>
+    <span>£3.80</span>
+  </div>
+</div>
+
+  <div class="card drink">
+    <img src="assets/cappuccino.jpg">
+    <div class="overlay">
+      <h3>Cappuccino</h3>
+      <p>Foamy and rich</p>
+      <span>£3.00</span>
+    </div>
+  </div>
+
+  <div class="card drink">
+  <img src="assets/americano.jpg">
+  <div class="overlay">
+    <h3>Americano</h3>
+    <p>Smooth black coffee</p>
+    <span>£2.50</span>
+  </div>
+</div>
+
+<div class="card drink">
+  <img src="assets/icedcoffee.jpg">
+  <div class="overlay">
+    <h3>Iced Coffee</h3>
+    <p>Cold brewed and refreshing</p>
+    <span>£3.20</span>
+  </div>
+</div>
+
+  <div class="card food">
+    <img src="assets/sandwich.jpg">
+    <div class="overlay">
+      <h3>Chicken Sandwich</h3>
+      <p>Grilled chicken with salad</p>
+      <span>£4.50</span>
+    </div>
+  </div>
+
+  <div class="card food">
+  <img src="assets/toastie.jpg">
+  <div class="overlay">
+    <h3>Cheese Toastie</h3>
+    <p>Golden toasted sandwich with melted cheese</p>
+    <span>£3.80</span>
+  </div>
+</div>
+
+<div class="card food">
+  <img src="assets/hamcheesetoastie.jpg">
+  <div class="overlay">
+    <h3>Ham and Cheese Toastie</h3>
+    <p>Golden toasted sandwich with melted cheese and delectable ham</p>
+    <span>£3.80</span>
+  </div>
+</div>
+
+<div class="card food vegan">
+  <img src="assets/vegansandwich.jpg">
+  <div class="overlay">
+    <h3>Vegan Sandwich</h3>
+    <p>Sandwich with vegan cheese</p>
+    <span>£4.20</span>
+  </div>
+</div>
+
+<div class="card food">
+  <img src="assets/croissant.jpg">
+  <div class="overlay">
+    <h3>Butter Croissant</h3>
+    <p>Flaky and freshly baked</p>
+    <span>£2.40</span>
+  </div>
+</div>
+
+  <div class="card food vegan">
+  <img src="assets/redvelvetcake.jpg">
+  <div class="overlay">
+    <h3>Red Velvet Cake</h3>
+    <p>Soft, moist cake with creamy frosting </p>
+    <span>£3.20</span>
+  </div>
+</div>
+
+<div class="card food vegan">
+  <img src="assets/vegancake.jpg">
+  <div class="overlay">
+    <h3>Vegan Carrot Cake</h3>
+    <p>Spiced carrot cake with vegan frosting</p>
+    <span>£3.20</span>
+  </div>
+</div>
+
+<div class="card food vegan">
+  <img src="assets/veganbrownie.jpg">
+  <div class="overlay">
+    <h3>Vegan Brownie</h3>
+    <p>Dairy-free chocolate treat</p>
+    <span>£2.80</span>
+  </div>
+</div>
+
+</div>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="footer-inner">
+        <div class="footer-brand">
+            <p class="footer-logo-text">The Daily Cup</p>
+            <p class="footer-tagline">Your Daily Coffee Fix.</p>
+        </div>
+
+        <div class="footer-socials">
+            <a href="https://www.instagram.com/" class="social-icon" target="_blank">
+                <img src="./assets/instagram.png" alt="Instagram">
+            </a>
+            <a href="https://www.facebook.com/" class="social-icon" target="_blank">
+                <img src="./assets/facebook.png" alt="Facebook">
+            </a>
+            <a href="https://www.tiktok.com/" class="social-icon" target="_blank">
+                <img src="./assets/tiktok.png" alt="TikTok">
+            </a>
+        </div>
+
+        <div class="footer-contact">
+            <address class="footer-address">14 Castle Street, Belfast, BT1 1HE</address>
+            <a href="mailto:info@thedailycup.com" class="footer-email">info@thedailycup.com</a>
+            <a href="contact.html" class="footer-contact-link">Contact Us</a>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; <span id="year"></span> The Daily Cup. All rights reserved.</p>
+    </div>
+</footer>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/menu.js"></script>
+</body>
+</html>
